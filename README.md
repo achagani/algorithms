@@ -10,6 +10,5 @@ Just a collection of different algorithms I write for staying sharp :-)
 - Breadth First Search
 - Dijkstra (Shortest Path)
 
-
 ### Machine Leanring
 - Apriori (Market Baseket Analysis)
