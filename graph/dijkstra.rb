@@ -1,11 +1,3 @@
-class Integer
-  N_BYTES = [42].pack('i').size
-  N_BITS = N_BYTES * 64
-  MAX = 2 ** (N_BITS - 2) - 1
-  MIN = -MAX - 1
-end
-
-
 class Graph
   attr_accessor :graph
 
@@ -20,10 +12,6 @@ class Graph
 
   def dijkstra(v)
     spt_set= Array.new
-    dist = Array.new
-    self.graph.size.times do |i|
-      dist[i] = Integer::MAX
-    end
 
     # Root Case
     q = Array.new
