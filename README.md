@@ -2,6 +2,10 @@
 
 Just a collection of different algorithms I write for staying sharp :-)
 
+### Sort
+- merge sort
+- bubble sort
+
 ### Tree Based
 - binary search
 
