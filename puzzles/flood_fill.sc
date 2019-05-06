@@ -61,20 +61,20 @@ trait FloodFill {
                 checkFlood(root_cell, row_idx, right)
         }
 
+        // left
+        val left = col_idx - 1
+        if (left >= 0) {
+            val lCord = makeCoordinates(row_idx, left)
+            if (!visited.keySet.contains(lCord) & lCord.value == root_cell.value)
+                checkFlood(root_cell, row_idx, left)
+        }
+
         // bottom
         val down = row_idx + 1
         if (down <= ROW - 1) {
             val dCord = makeCoordinates(down, col_idx)
             if (!visited.keySet.contains(dCord) && dCord.value == root_cell.value)
                 checkFlood(root_cell, down, col_idx)
-        }
-
-        // left
-        val left = col_idx - 1
-        if (left >= 0) {
-            val lCord = makeCoordinates(row_idx, left)
-            if (!visited.keySet.contains(lCord) & lCord.value == root_cell.value)
-                checkFlood(root_cell, left, row_idx)
         }
 
         // up
