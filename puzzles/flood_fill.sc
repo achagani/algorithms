@@ -66,7 +66,7 @@ trait FloodFill {
         if (down <= ROW - 1) {
             val dCord = makeCoordinates(down, col_idx)
             if (!visited.keySet.contains(dCord) && dCord.value == root_cell.value)
-                checkFlood(root_cell, down, row_idx)
+                checkFlood(root_cell, down, col_idx)
         }
 
         // left
