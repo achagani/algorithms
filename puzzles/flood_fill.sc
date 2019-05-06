@@ -78,15 +78,16 @@ trait FloodFill {
         }
 
         // up
-        val up = row_idx + 1
+        val up = row_idx - 1
         if (up >= 0) {
-            val uCord = makeCoordinates(row_idx, col_idx)
+            val uCord = makeCoordinates(up, col_idx)
             if (!visited.contains(uCord) & uCord.value == root_cell.value)
                 checkFlood(root_cell, up, col_idx)
         }
     }
 
     def printFloods() = {
+        println("Printing Continuous Grids With Root Node:")
         floods.iterator.foreach(f => println(s"${f._1}: ${f._2.length}"))
     }
 
