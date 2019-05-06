@@ -16,3 +16,6 @@ Just a collection of different algorithms I write for staying sharp :-)
 
 ### Machine Leanring
 - Apriori (Market Baseket Analysis)
+
+### Puzzles 
+- Flood Fill
