@@ -107,3 +107,11 @@ trait FloodFill {
 
 val f = new FloodFill {}
 f.traverse
+
+// scala> Printing Continuous Grids With Root Node:
+// Coordinates(1,1,b): 5
+// Coordinates(0,0,g): 3
+// Coordinates(0,3,r): 1
+// Coordinates(2,0,r): 1
+// Coordinates(1,2,r): 1
+// Coordinates(0,2,b): 1
